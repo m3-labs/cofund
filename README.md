@@ -1,2 +1,2 @@
-# cofund
+# Cofund
 Robust project funding.
