@@ -1,1 +1,36 @@
 # Cofund: a robust mechanism for funding DAO projects
+
+## Intro
+Decentralized governance (DeGov) is key to DAO operations and, as an increasing number of DAOs adopt and experiment with difference governance paradigms, some major challenges have emerged. In particular, with the increased sophistication of L2 protocols and applications there is an increased need for mechanisms to coordinate activities such as:
+
+- Protocol improvements, R&D, and documentation
+- Client development and layer n+1 dApp development
+- Community development and outreach
+
+Currently, most DAOs rely at least in part on independent *project workers* (PWs) that can be individuals or organizations. PWs are usually rewarded with salaries or grants that are either centrally decided or voted upon from the community. For example, the OceanDAO has a monthly grant cycle cadence where project proposal are voted on by the community. 
+
+The typical project takes from one to a few months to deliver results. Some projects require substantial initial investments, such as hiring a new team member with a particular expertise or purchasing an asset. At the same time, there is uncertainty in the value of projects, which cannot be fully revealed at the time a project proposal is voted on (usually before the start of the project). This uncertainty leads to a problem: **big and potentially very valuable proposals often failing to receive enough votes** [Note: add examples from OceanDAO and others]. The current most popular solution is to split bigger proposals into a sequence of smaller ones. Sometimes this works well but it has its own problems:
+
+- **Grant round fatigue:** going through a grant round involves a lot of preparation and discussion work. Splitting a 3 months project into 3 proposals (one a month) instead of one proposal at the beginning adds overhead work to the PW and takes focus away from the actual project. At the same time, this also increases the burden community voters.
+- **Partial representation of the project:** sometimes the project value is not realized at the first milestone, but at the second or third. If the PW needs to split the project into small chunks, it may fail to gain enough support from the community to even get started. This also add uncertainty on the PW on whether they would get funded in the following rounds and decreases their ability to plan for the full project span.
+
+Using ideas from conviction voting and osmotic funding, we are going to propose a better solution that solves this problems and it is a flexible framework for project funding with many other added benefits [Note: add links and expand explanation].
+
+## Cofund
+
+The intent of cofund is to create a mechanism that makes project funding more flexible, enables the revelation of community preferences and value of the project after the voting is concluded, and it compatible with DAOs current operations and simple enough that can be adopted with little overhead.
+
+There are N participants (the PWs) that submit proposals to get assigned resources from a common resource pool R. Each proposal contains a resource request r that has two parts:
+
+- a **fixed part** to be paid immediately in full
+- a **dynamic part** to be streamed and an associated target rate (alternatively target period)
+
+Example:
+- OceanDAO Grant Round 42
+    - 20 participants
+    - $250k funds available
+- Team A proposal requests $12k
+    - $6k to be paid immediately
+    - $6k to be streamed at the target rate of $200/day
+
+If the project is selected, this two-part funding mechanism gives the initial funding to get started immediately while allowing for preference and value discovery after the project starts. It remains to be specified how the target rate will be updated, but a few options come to mind: (1) using ideas from conviction voting/osmotic funding; (2) making it proportional to the consensus received (ie, a project that receives 100%-yes votes gets funded at full target rate, a project that receives 51%-yes votes at lower rate); (3) adding intermediate checkpoint from community stewards; etc.
