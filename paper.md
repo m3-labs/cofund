@@ -14,7 +14,7 @@ The typical project takes from one to a few months to deliver results. Some proj
 - **Grant round fatigue:** going through a grant round involves a lot of preparation and discussion work. Splitting a 3 months project into 3 proposals (one a month) instead of one proposal at the beginning adds overhead work to the PW and takes focus away from the actual project. At the same time, this also increases the burden community voters.
 - **Partial representation of the project:** sometimes the project value is not realized at the first milestone, but at the second or third. If the PW needs to split the project into small chunks, it may fail to gain enough support from the community to even get started. This also add uncertainty on the PW on whether they would get funded in the following rounds and decreases their ability to plan for the full project span.
 
-Using ideas from conviction voting and osmotic funding, we are going to propose a better solution that solves this problems and it is a flexible framework for project funding with many other added benefits [Note: add links and expand explanation].
+We are going to propose a mechanism that solves this problems and it is a flexible framework for project funding with many other added benefits [Note: add links and expand explanation].
 
 ## Cofund
 
