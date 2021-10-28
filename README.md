@@ -1,2 +1,2 @@
 # Cofund
-Robust project funding.
+Flexible project funding.
