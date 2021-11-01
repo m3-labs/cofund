@@ -27,15 +27,6 @@ A number of DAOs and communities in the blockchain space have implemented fundin
         - Decision: OCEAN token holders vote Y/N; 50%+ Y get funded.
         - Distribution: immediately.
         - Evaluation: stewards for checkpoint/help; at the end of the project.
-- 1hive
-    - Goal
-    - Resource Pool
-    - Proposals
-    - Funding mechanism
-        - Decision
-        - Distribution
-        - Evaluation
-- gitcoin
 
 ## Cofund
 
@@ -75,16 +66,6 @@ It remains to be specified how the target rate will be selected and updated, but
 
 *Lorem ipsum*
 
-- Distribute your token on the proposals or yes/no ???
-- Threshold to get funded: 
-- Fraction of funded amount: 
-
-| Yes Votes / Conviction | Funding |
-|  - | - |
-| 60% | 60% ??? |
-| 100% | Full |
-| 40% | Excluded |
-
 #### Checkpoints and target funds update
 
 *Lorem ipsum*
@@ -110,10 +91,7 @@ There are two main components: user experience and backend contracts. Here are o
 
 ### Roadmap
 
-*Lorem ipsum.*
-- Connect/expand voting app
-- Set up backend contracts
-    - How the flows are set/updated
+*Lorem ipsum*
 
 ## Resources
 - [Ethereum white paper](https://ethereum.org/en/whitepaper/)
