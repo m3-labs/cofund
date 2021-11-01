@@ -16,21 +16,114 @@ The typical project takes from one to a few months to deliver results. Some proj
 
 We are going to propose a mechanism that solves this problems and it is a flexible framework for project funding with many other added benefits [Note: add links and expand explanation].
 
+### Exhisting funding programs
+
+A number of DAOs and communities in the blockchain space have implemented funding programs to finance projects on their platforms. We summarize here some of the most popular and their key features.
+- Ocean DAO
+    - Goal: fund projects with ROI > 1.
+    - Resource Pool: fixed amount of already minted OCEAN token from the Ocean Protocol Fundation treasury.
+    - Proposals: every month, teams submit project presentation and request a funding amount; proposals have tiers (first time projects lower amounts).
+    - Funding mechanism
+        - Decision: OCEAN token holders vote Y/N; 50%+ Y get funded.
+        - Distribution: immediately.
+        - Evaluation: stewards for checkpoint/help; at the end of the project.
+- 1hive
+    - Goal
+    - Resource Pool
+    - Proposals
+    - Funding mechanism
+        - Decision
+        - Distribution
+        - Evaluation
+- gitcoin
+
 ## Cofund
 
 The intent of cofund is to create a mechanism that makes project funding more flexible, enables the revelation of community preferences and value of the project after the voting is concluded, and it compatible with DAOs current operations and simple enough that can be adopted with little overhead.
 
-There are N participants (the PWs) that submit proposals to get assigned resources from a common resource pool R. Each proposal contains a resource request r that has two parts:
+### Proposals
+
+There are `N` participants (the PWs) that submit proposals to get assigned resources from a common resource pool `R`. Each proposal contains a resource request `r` that has a **total request amunt** for the project divided in two-parts:
 
 - a **fixed part** to be paid immediately in full
 - a **dynamic part** to be streamed and an associated target rate (alternatively target period)
 
-Example:
+Example 1:
 - OceanDAO Grant Round 42
-    - 20 participants
     - $250k funds available
-- Team A proposal requests $12k
+    - 20 participants
+- Project A proposal requests $12k
     - $6k to be paid immediately
     - $6k to be streamed at the target rate of $200/day
 
-If the project is selected, this two-part funding mechanism gives the initial funding to get started immediately while allowing for preference and value discovery after the project starts. It remains to be specified how the target rate will be updated, but a few options come to mind: (1) using ideas from conviction voting/osmotic funding; (2) making it proportional to the consensus received (ie, a project that receives 100%-yes votes gets funded at full target rate, a project that receives 51%-yes votes at lower rate); (3) adding intermediate checkpoint from community stewards; etc.
+If the project is selected, this two-part funding mechanism gives the initial funding to get started immediately while allowing for preference and value discovery after the project starts. Let's consider now a more realistic examples with multiple projects competing in the funding round.
+
+Example 2:
+- Grant Round with $100k funds and 3 proposals
+
+| Proposal | Total request | Fixed | Rate |
+| - | - | - | - |
+| Prop A | $60k | $30k | $1000/day |
+| Prop B | $40k | $28k | $200/day |
+| Prop C | $30k | $20k | $333/day |
+
+It remains to be specified how the target rate will be selected and updated, but a few options come to mind: (1) using ideas from exhisting mechanisms (eg, conviction voting/osmotic funding); (2) making it proportional to the consensus received (ie, a project that receives 100%-yes votes gets funded at full target rate, a project that receives 51%-yes votes at lower rate); (3) adding intermediate checkpoint from community stewards; etc.
+
+### Funding Mechanism
+
+#### Voting mechanism and initial funds
+
+*Lorem ipsum*
+
+- Distribute your token on the proposals or yes/no ???
+- Threshold to get funded: 
+- Fraction of funded amount: 
+
+| Yes Votes / Conviction | Funding |
+|  - | - |
+| 60% | 60% ??? |
+| 100% | Full |
+| 40% | Excluded |
+
+#### Checkpoints and target funds update
+
+*Lorem ipsum*
+
+## Implementation
+
+There are a few exhisting apps in the DeGov space that we can leverage. General purpose voting apps like [Snapshot](https://docs.snapshot.org/) and Aragon Voting App are too generic; [1Hive's conviction voting app](https://github.com/1Hive/conviction-voting-app) is a customized implementation of a particular voting mechanism for funding 1Hive's projects; Giveth has very interesting feature like [milestone reporting](https://medium.com/giveth/coming-soon-milestone-reporting-a-mechanism-for-built-in-accountability-d2de06310ee4), however it is focused on philantropic giving and not strategic project funding. 
+
+Our goal is to build an app that implements the Cofund mechanism and superpowers project funding and governance for DAOs.
+
+### Components
+There are two main components: user experience and backend contracts. Here are our guiding principles for their development:
+- User experience
+    - Voters interface
+        - Clear voting mechanics: how they can vote and how their votes are converted into funding
+    - PWs interface
+        - Clear funding mechanics: how to specify initial request and checkpoints; usable: specify flow rates in day (the conversion to per-second rates is in the backend)
+    - Stewards interface
+        - Clear deposit mechanics: how funds are deposited and unlocked upon funding events (initial funding/checkpoints)
+        - Clear checkpoint controls
+- Backend contracts
+    - Trade-off between onchain/offchain operations (eg, voting offchain and funding onchain? everything onchain? what about checkpoints and flow rate updates?)
+
+### Roadmap
+
+*Lorem ipsum.*
+- Connect/expand voting app
+- Set up backend contracts
+    - How the flows are set/updated
+
+## Resources
+- [Ethereum white paper](https://ethereum.org/en/whitepaper/)
+- [Quadratic funding paper from BHW](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3243656)
+- Conviction voting
+    - [A brief history of conviction voting - blog post](https://michaelzargham.medium.com/a-brief-history-of-conviction-voting-ad4ca4eb4aee)
+    - [Commons Stack's conviction voting guide](https://medium.com/commonsstack/conviction-voting-a-novel-continuous-decision-making-alternative-to-governance-62e215ad2b3d)
+    - [Zargham's sensor fusion - paper](https://github.com/BlockScience/conviction/blob/master/social-sensorfusion.pdf)
+    - [Conviction voting formalization - notebook](https://nbviewer.org/github/BlockScience/Aragon_Conviction_Voting/blob/master/algorithm_overview.ipynb)
+    - [Conviction voting simulations](https://github.com/1Hive/conviction-voting-cadcad/blob/master/README.md)
+- New governance mechanisms
+    - [Computer aided governance of gitcoin grants - blog post](https://medium.com/block-science/towards-computer-aided-governance-of-gitcoin-grants-730de7bcdbef)
+    - [Commitment voting - paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3742435)
