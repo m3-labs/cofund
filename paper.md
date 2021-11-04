@@ -58,7 +58,7 @@ Example 2:
 | Prop B | $40k | $28k | $200/day |
 | Prop C | $30k | $20k | $333/day |
 
-It remains to be specified how the target rate will be selected and updated, but a few options come to mind: (1) using ideas from exhisting mechanisms (eg, conviction voting/osmotic funding); (2) making it proportional to the consensus received (ie, a project that receives 100%-yes votes gets funded at full target rate, a project that receives 51%-yes votes at lower rate); (3) adding intermediate checkpoint from community stewards; etc.
+It remains to be specified how the target rate will be selected and updated, but a few options come to mind: (1) using ideas from exhisting mechanisms (eg, conviction voting/osmotic funding); (2) making it proportional to the consensus received (ie, a project that receives 100%-yes votes gets funded at full target rate, a project that receives 51%-yes votes at lower rate); (3) adding intermediate checkpoint perhaps with community stewards or community review; etc.
 
 ### Funding Mechanism
 
@@ -83,7 +83,7 @@ There are two main components: user experience and backend contracts. Here are o
         - Clear voting mechanics: how they can vote and how their votes are converted into funding
     - PWs interface
         - Clear funding mechanics: how to specify initial request and checkpoints; usable: specify flow rates in day (the conversion to per-second rates is in the backend)
-    - Stewards interface
+    - Review mechanism interface
         - Clear deposit mechanics: how funds are deposited and unlocked upon funding events (initial funding/checkpoints)
         - Clear checkpoint controls
 - Backend contracts
@@ -91,6 +91,13 @@ There are two main components: user experience and backend contracts. Here are o
 
 ### Roadmap
 
+#### MVP
+For the MVP we will focus on two components that are core to the cofund idea:
+- Backend contract to setup payment stream: a Superfluid Constant Flow Agreement (CPA).
+- Review mechanism interface: UI that shows ongoing projects, current funding status, and allows to change the flow rate of the streamed payment.
+
+
+#### Next steps
 *Lorem ipsum*
 
 ## Resources
