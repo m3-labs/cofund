@@ -1,6 +1,7 @@
 # Cofund: a robust mechanism for funding DAO projects
 
 ## Intro
+
 Decentralized governance (DeGov) is key to DAO operations and, as an increasing number of DAOs adopt and experiment with difference governance paradigms, some major challenges have emerged. In particular, with the increased sophistication of L2 protocols and applications there is an increased need for mechanisms to coordinate activities such as:
 
 - Protocol improvements, R&D, and documentation
@@ -94,6 +95,10 @@ There are two main components: user experience and backend contracts. Here are o
 #### MVP
 For the MVP we will focus on two components that are core to the cofund idea:
 - Backend contract to setup payment stream: a Superfluid Constant Flow Agreement (CPA).
+    - Test case:
+        - Proposals A and B in Example 2 above win the round and get fully funded.
+        - Setup 2 CFAs, one for each proposal, to manage the streaming part of the funding with the rates specified in the examples.
+        - Imput streaming rate; monitor streaming progress; ability to change streaming rate at some later point in the future (checkpoint).
 - Review mechanism interface: UI that shows ongoing projects, current funding status, and allows to change the flow rate of the streamed payment.
 
 
@@ -101,7 +106,9 @@ For the MVP we will focus on two components that are core to the cofund idea:
 *Lorem ipsum*
 
 ## Resources
-- [Ethereum white paper](https://ethereum.org/en/whitepaper/)
+- [BC funding survey by Ocean Protocol](https://blog.oceanprotocol.com/web3-sustainability-i-survey-of-ecosystem-funding-programs-ffa2bb235df5)
+    - "Economic sustainability is the key for any Web3 project to survive and thrive. It is the equivalent of financial viability and good business model for Web2-type businesses. Most Web3 projects rely on funding to foster a sustainable ecosystem, which is often administered by the community (foundation or DAO)."
+    - "Grants pose a challenge: what if the recipient does not complete what it aimed to do? The money has already been granted. So, often, little can be done on those particular funds. But there is a side effect: that recipient will have difficulty getting future grants. So while grants do not have an explicit mechanism for poor results, reputation turns this from a short-term game to a long-term game. However, it’s still unfortunate that the initial grant money was spent (and lost)."
 - [Quadratic funding paper from BHW](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3243656)
 - Conviction voting
     - [A brief history of conviction voting - blog post](https://michaelzargham.medium.com/a-brief-history-of-conviction-voting-ad4ca4eb4aee)
