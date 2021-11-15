@@ -98,7 +98,7 @@ For the MVP we will focus on two components that are core to the cofund idea:
     - Test case:
         - Proposals A and B in Example 2 above win the round and get fully funded.
         - Setup 2 CFAs, one for each proposal, to manage the streaming part of the funding with the rates specified in the examples.
-        - Imput streaming rate; monitor streaming progress; ability to change streaming rate at some later point in the future (checkpoint).
+        - Input streaming rate; monitor streaming progress; ability to change streaming rate at some later point in the future (checkpoint).
 - Review mechanism interface: UI that shows ongoing projects, current funding status, and allows to change the flow rate of the streamed payment.
 
 
