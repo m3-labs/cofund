@@ -1,4 +1,5 @@
-![cofund-logo](https://user-images.githubusercontent.com/7682268/144948561-5f07239a-a0d8-429d-8b24-ed63bcc41332.png =100x100)
+<img src="https://user-images.githubusercontent.com/7682268/144949810-313d0ccf-6355-4a8c-9590-05c4e6deb35c.png" width="180" height="180">
+
 # Cofund
 
 Vote, Fund, Deliver.
