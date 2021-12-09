@@ -39,12 +39,13 @@ yarn install
  
 ## Config `.env` file
 copy the `.env.template` file and change the name to `.env`. The format of the file is as follows:
-`
-ALCHEMY_URL= https://eth-rinkeby.alchemyapi.io/v2/xxxxxxxxxxx
-PK= xxxxxxx
-RECEIVER_PK= xxxxx
-ETHERSCAN_API_KEY= xxxxxx
-`
+
+    ```
+    ALCHEMY_URL= https://eth-rinkeby.alchemyapi.io/v2/xxxxxxxxxxx
+    PK= xxxxxxx
+    RECEIVER_PK= xxxxx
+    ETHERSCAN_API_KEY= xxxxxx
+    ```
 
 - Go to the [Alchemy.io](https://dashboard.alchemyapi.io/) and create create an App and copy the HTTP URL from the VIEW KEY. You will need it to paste it in the `.env` file. In this work, we used Rinkeby testnet.
 - PK is the private key of the metamask account.
