@@ -12,6 +12,7 @@ Vote, Fund, Deliver.
 - [Quick Start](#quick-start)
   - [Config `.env` file](#config-env-file)
   - [Deploy CoFund conteract to Rinkeby](#deploy-cofund-conteract-to-rinkeby)
+  - [send Superfluid Stream to the smart contract](#send-superfluid-stream-to-the-smart-contract)
   - [Transfer Ownership of the CoFund to Aragon client](#transfer-ownership-of-the-cofund-to-aragon-client)
   - [Interact with Superfulid via voting on Aragon](#interact-with-superfulid-via-voting-on-aragon)
 
@@ -62,6 +63,10 @@ On the local machine, run:
 ```
 npx hardhat deploy --reset
 ```
+
+## send Superfluid Stream to the smart contract
+In this step, copy the generated smart contract, i.e. `COFUND`, and go to the [Superfluid dashboard](https://app.superfluid.finance/dashboard),
+and send some stream to the smart contract. 
 
 ## Transfer Ownership of the CoFund to Aragon client
 First, go to Aragon and create an organization. Go to the Organization section, and copy the address of the agent.
