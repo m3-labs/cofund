@@ -32,10 +32,11 @@ Clone this repository by typing the following command:
 `git clone https://github.com/m3-labs/cofund.git`
 
 Then,  go to the App folder:
-`
+
+```
 cd App
 yarn install
-`
+```
 
 If you get error please install [Node](https://nodejs.org/en/download/), [Yarn](https://classic.yarnpkg.com/en/docs/install), and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
  
@@ -66,8 +67,9 @@ npx hardhat deploy --reset
 First, go to Aragon and create an organization. Go to the Organization section, and copy the address of the agent.
 Next, go to `scripts/setOwner.js` file, and paste the agent address in this expression:
 
-`  const txData = (await CoFund.methods.transferOwnership("0x5322E02231B6CB4713Ff93889Bbb6966f0b07863")).encodeABI() 
-`
+```
+  const txData = (await CoFund.methods.transferOwnership("0x5322E02231B6CB4713Ff93889Bbb6966f0b07863")).encodeABI() 
+```
 After this step, the Aragon agent will be the owner of the smart contract and it can interact with the contract such as changing the stream or modifying the fixed amount of fund.
 
 To transfer the ownership run the following command on your console:
