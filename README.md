@@ -12,8 +12,8 @@ Vote, Fund, Deliver.
 - [Quick Start](#quick-start)
   - [Config `.env` file](#config-env-file)
   - [Deploy CoFund conteract to Rinkeby](#deploy-cofund-conteract-to-rinkeby)
-  - [send Superfluid Stream to the smart contract](#send-superfluid-stream-to-the-smart-contract)
-  - [Transfer Ownership of the CoFund to Aragon client](#transfer-ownership-of-the-cofund-to-aragon-client)
+  - [Send Superfluid Stream to the CoFund smart contract](#send-superfluid-stream-to-the-smart-contract)
+  - [Transfer Ownership of the CoFund smart contract to Aragon client](#transfer-ownership-of-the-cofund-to-aragon-client)
   - [Interact with Superfulid via voting on Aragon](#interact-with-superfulid-via-voting-on-aragon)
 
 # Submission
