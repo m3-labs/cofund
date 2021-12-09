@@ -2,7 +2,7 @@
 
 # Cofund
 
-Vote, Fund, Deliver.
+**Vote 🗳️  ⮕ Fund 💸  ⮕ Deliver 🚀**
 
 Cofund is a new framework that bridges the **voting & funding processes** for large DAO project using **NFTs**, **Superfluid streams**, and **Aragon client**.
 
