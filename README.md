@@ -79,5 +79,16 @@ npx hardhat run scripts/setOwner.js
 ```
 
 ## Interact with Superfulid via voting on Aragon
+We can interact with the smart contract via the Aragon console and call any function, for example, `setFixedFund` or `issueNFT`.
+
+First, we need to  go to the console in the org address: `https://client.aragon.org/#/cofund4/console`
+And execute any function based on this format:
+
+```
+act/agentAddress/targetAddress/methodName(type: arg)
+```
+
+The `targetAddress` is the address of the smart contract. 
 
 
+![Argon Voting section](images/aragon_voting.png)
