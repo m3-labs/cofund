@@ -36,6 +36,8 @@ Then,  go to the App folder:
 cd App
 yarn install
 `
+
+If you get error please install [Node](https://nodejs.org/en/download/), [Yarn](https://classic.yarnpkg.com/en/docs/install), and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
  
 ## Config `.env` file
 copy the `.env.template` file and change the name to `.env`. The format of the file is as follows:
