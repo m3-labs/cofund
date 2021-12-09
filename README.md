@@ -4,19 +4,9 @@
 
 Vote, Fund, Deliver.
 
-# Table of content
+Cofund is a new framework that bridges the **voting & funding processes** for large DAO project using **NFTs**, **Superfluid streams**, and **Aragon client**.
 
-- [Cofund](#cofund)
-- [Table of content](#table-of-content)
-- [Submission](#submission)
-- [Quick Start](#quick-start)
-  - [Config `.env` file](#config-env-file)
-  - [Deploy the CoFund smart contract to Rinkeby](#deploy-cofund-conteract-to-rinkeby)
-  - [Send Superfluid Stream to the CoFund smart contract](#send-superfluid-stream-to-the-smart-contract)
-  - [Transfer Ownership of the CoFund smart contract to Aragon client](#transfer-ownership-of-the-cofund-to-aragon-client)
-  - [Interact with Superfulid via voting on Aragon](#interact-with-superfulid-via-voting-on-aragon)
-
-# Submission
+## Submission
 
 This repo contains the smart contracts for the prototype of the Cofund app that we built in the DAO Global Hackathon.
 
@@ -26,11 +16,20 @@ Links for the pitch deck and the video with the demo for the submission:
 - XXX
 - XXX
 
+# Quick Setup Guide
 
-# Quick Start
+## Table of contents
+
+- [Config `.env` file](#config-env-file)
+- [Deploy the CoFund smart contract to Rinkeby](#deploy-the-cofund-smart-contract-to-rinkeby)
+- [Send Superfluid Stream to the CoFund smart contract](#send-superfluid-stream-to-the-smart-contract)
+- [Transfer Ownership of the CoFund smart contract to Aragon client](#transfer-ownership-of-the-cofund-to-aragon-client)
+- [Interact with Superfulid via voting on Aragon](#interact-with-superfulid-via-voting-on-aragon)
 
 Clone this repository by typing the following command:
-`git clone https://github.com/m3-labs/cofund.git`
+```
+git clone https://github.com/m3-labs/cofund.git
+```
 
 Then, go to the App folder:
 ```
@@ -38,7 +37,7 @@ cd App
 yarn install
 ```
 
-If you get an error please install [Node](https://nodejs.org/en/download/), [Yarn](https://classic.yarnpkg.com/en/docs/install), and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+Make sure you have installed [Node](https://nodejs.org/en/download/), [Yarn](https://classic.yarnpkg.com/en/docs/install), and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
  
 ## Config `.env` file
 copy the `.env.template` file and change the name to `.env`. The format of the file is as follows:
