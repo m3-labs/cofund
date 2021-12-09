@@ -54,9 +54,17 @@ ETHERSCAN_API_KEY= xxxxxx
 
 
 ## Deploy CoFund conteract to Rinkeby
+On the local machine, run:
 
+```
+npx hardhat deploy --reset
+```
 
 ## Transfer Ownership of the CoFund to Aragon client
+
+```
+npx hardhat run scripts/setOwner.js
+```
 
 ## Interact with Superfulid via voting on Aragon
 
