@@ -10,7 +10,8 @@ Cofund is a new framework that bridges the **voting & funding processes** for la
 
 This repo contains the smart contracts for the prototype of the Cofund app that we built in the DAO Global Hackathon.
 
-The light-paper in [paper.md](https://github.com/m3-labs/cofund/blob/main/paper.md) contains an extended explanation of the framework toghether with more details on practical relevance and future development goals. We also have mockups that show how our full product will look like, with management of multiple projects, milestone tracking, and a configuration panel where the DAO operator can choose among a flexible set of voting strategies, voting-funding conversion rules, and checkpoint/milestone evaluation rules.
+The light-paper in [paper.md](https://github.com/m3-labs/cofund/blob/main/paper.md) contains an extended explanation of the framework toghether with more details on practical relevance and future development goals. We also have [mockups](https://github.com/m3-labs/cofund/files/7688826/Cofund.Product.pdf)
+ that show how our full product will look like, with management of multiple projects, milestone tracking, and a configuration panel where the DAO operator can choose among a flexible set of voting strategies, voting-funding conversion rules, and checkpoint/milestone evaluation rules.
 
 Links for the submission:
 - Pitch deck XXX
