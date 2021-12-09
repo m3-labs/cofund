@@ -31,9 +31,9 @@ Links for the pitch deck and the video with the demo for the submission:
 Clone this repository by typing the following command:
 `git clone https://github.com/m3-labs/cofund.git`
 
-Then,  go to the implementation folder:
+Then,  go to the App folder:
 `
-cd Implementation
+cd App
 yarn install
 `
  
