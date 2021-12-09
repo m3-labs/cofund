@@ -46,7 +46,7 @@ async function main() {
   const CoFund = await new web3.eth.Contract(CoFundABI, CoFundAddress);
   const nonce = await web3.eth.getTransactionCount(_sender, 'latest'); // nonce starts counting from 0
 
-  // If the Aragon Agent be the owner of the contract, it can call setFixedFund and issueNFT, etc
+  // If the Aragon Agent be the owner of the contract, it can call setFixedFund and issueNFT (streaming fund), etc
   // aragon agent: 0x5322E02231B6CB4713Ff93889Bbb6966f0b07863
   const txData = (await CoFund.methods.transferOwnership("0x5322E02231B6CB4713Ff93889Bbb6966f0b07863")).encodeABI() 
 

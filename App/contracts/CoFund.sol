@@ -70,6 +70,7 @@ contract CoFund is ERC721 {
         owner = newOwner;
     }
 
+    // CoFund is a combination of fixed fund and stream fund
     function setFixedFund(uint256 _fund) external onlyOwner {
         fixed_fund = _fund;
     }
