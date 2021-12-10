@@ -4,7 +4,9 @@
 
 **Vote 🗳️  ⮕ Fund 💸  ⮕ Deliver 🚀**
 
-Cofund is a new framework that bridges the **voting & funding processes** for large DAO project using **NFTs**, **Superfluid streams**, and **Aragon client**.
+Cofund is a framework that bridges the **voting and funding processes** for large DAO projects.
+
+The first implementation leverages **NFTs**, **Superfluid streams**, and **Aragon client**.
 
 ## Submission Docs
 
