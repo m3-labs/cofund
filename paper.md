@@ -1,4 +1,4 @@
-# Cofund: a robust mechanism for funding DAO projects
+# Cofund: a flexible mechanism for funding DAO projects
 
 ## Intro
 
@@ -40,7 +40,7 @@ There are `N` participants (the PWs) that submit proposals to get assigned resou
 - a **fixed part** to be paid immediately in full
 - a **dynamic part** to be streamed and an associated target rate (alternatively target period)
 
-Example 1:
+**Example 1**
 - OceanDAO Grant Round 42
     - $250k funds available
     - 20 participants
@@ -50,7 +50,7 @@ Example 1:
 
 If the project is selected, this two-part funding mechanism gives the initial funding to get started immediately while allowing for preference and value discovery after the project starts. Let's consider now a more realistic examples with multiple projects competing in the funding round.
 
-Example 2:
+**Example 2**
 - Grant Round with $100k funds and 3 proposals
 
 | Proposal | Total request | Fixed | Rate |
@@ -88,17 +88,18 @@ There are two main components: user experience and backend contracts. Here are o
         - Clear deposit mechanics: how funds are deposited and unlocked upon funding events (initial funding/checkpoints)
         - Clear checkpoint controls
 - Backend contracts
-    - Trade-off between onchain/offchain operations (eg, voting offchain and funding onchain? everything onchain? what about checkpoints and flow rate updates?)
+    - Trade-off between onchain/offchain operations (eg, voting offchain and funding onchain vs. everything onchain; checkpoints and flow rate updates)
 
 ### Roadmap
 
 #### MVP
 For the MVP we will focus on two components that are core to the cofund idea:
-- Backend contract to setup payment stream: a Superfluid Constant Flow Agreement (CPA).
+- Backend contract to setup payment: fixed fund plus stream
     - Test case:
         - Proposals A and B in Example 2 above win the round and get fully funded.
-        - Setup 2 CFAs, one for each proposal, to manage the streaming part of the funding with the rates specified in the examples.
+        - Issue two contracts, one for each proposal, to manage the streaming part of the funding with the rates specified in the examples.
         - Input streaming rate; monitor streaming progress; ability to change streaming rate at some later point in the future (checkpoint).
+- Connect voting and funding: trigger funding as a result of a simple 1token1vote voting session on the project proposal. 
 - Review mechanism interface: UI that shows ongoing projects, current funding status, and allows to change the flow rate of the streamed payment.
 
 
