@@ -2,7 +2,6 @@
 pragma solidity ^0.8.0;
 
 import {ERC721} from "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-// import "@openzeppelin/contracts/access/Ownable.sol";
 
 import {
     ISuperfluid,
@@ -17,14 +16,11 @@ import {
 } from "@superfluid-finance/ethereum-contracts/contracts/interfaces/agreements/IConstantFlowAgreementV1.sol";
 
 
-// Simple contract which allows users to create NFTs with attached streams
-
 contract CoFund is ERC721 {
 
     address public owner;
     uint256 public fixed_fund;
 
-    
     ISuperfluid private _host; // host
     IConstantFlowAgreementV1 private _cfa; // the stored constant flow agreement class address
     
@@ -71,7 +67,7 @@ contract CoFund is ERC721 {
     }
 
     // CoFund is a combination of fixed fund and stream fund
-    function setFixedFund(uint256 _fund) external onlyOwner {
+    function setFixedFund(address receiver, uint256 _fund) external onlyOwner {
         fixed_fund = _fund;
     }
 

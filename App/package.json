@@ -21,6 +21,7 @@
     "lint": "npx hardhat check",
     "build": "npx hardhat compile",
     "deploy:reset": "npx hardhat deploy --reset",
+    "transfer": "npx hardhat run scripts/setOwner.js",
     "deploy": "npx hardhat deploy",
     "verify": "npx hardhat etherscan-verify",
     "issue": "npx hardhat run scripts/issueNFT.js",
