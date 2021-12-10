@@ -4,20 +4,21 @@
 
 **Vote 🗳️  ⮕ Fund 💸  ⮕ Deliver 🚀**
 
-Cofund is a framework that bridges the **voting and funding processes** for large DAO projects.
+Cofund is a framework that bridges the **voting and funding processes** for DAO grant programs. It is designed to improve the funding rate and completion of large and valuable projects by removing the main obstacles that make it difficult today.
 
-The first implementation leverages **NFTs**, **Superfluid streams**, and **Aragon client**.
+In the first version of Cofund, we leverage **NFTs**, **Superfluid streams**, and **Aragon client** to implement a flexible voting-funding mechanism that (1) automatically triggers funding upon approval of a project proposal in Aragon and (2) executes a new funding scheme consisting of an immediate fixed transfer plus a Superfluid stream with an adjustable rate.
 
 ## Submission Docs
 
 This repo contains the smart contracts for the prototype of the Cofund app that we built in the DAO Global Hackathon.
 
 The light-paper in [paper.md](https://github.com/m3-labs/cofund/blob/main/paper.md) contains an extended explanation of the framework toghether with more details on practical relevance and future development goals. We also have [mockups](https://github.com/m3-labs/cofund/files/7688826/Cofund.Product.pdf)
- that show how our full product will look like, with management of multiple projects, milestone tracking, and a configuration panel where the DAO operator can choose among a flexible set of voting strategies, voting-funding conversion rules, and checkpoint/milestone evaluation rules.
+ that show how our full product will look like, with management of multiple projects, milestone tracking, and a configuration panel that makes it easy to set and modify system parameters (voting strategies, voting-funding conversion rules, and checkpoint/milestone evaluation rules).
 
 Links for the submission:
+- Video with pitch XXX
+- Video with full demo XXX
 - Pitch deck XXX
-- Video with pitch and demo XXX
 
 ## Quick Setup Guide
 
