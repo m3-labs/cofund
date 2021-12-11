@@ -30,7 +30,7 @@ git clone https://github.com/m3-labs/cofund.git
 
 Then, go to the App folder:
 ```
-cd App
+cd app
 yarn install
 ```
 
