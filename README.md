@@ -16,9 +16,10 @@ The light-paper in [paper.md](https://github.com/m3-labs/cofund/blob/main/paper.
  that show how our full product will look like, with management of multiple projects, milestone tracking, and a configuration panel that makes it easy to set and modify system parameters (voting strategies, voting-funding conversion rules, and checkpoint/milestone evaluation rules).
 
 Links for the submission:
-- Video with pitch XXX
-- Video with full demo XXX
-- Pitch deck XXX
+- [Video - pitch and demo](https://youtu.be/AbX1aV7Owdc)
+- [Video - full demo with smart contract setup](https://youtu.be/mdUz59PZ71o)
+- [Cofund pitch deck](https://github.com/m3-labs/cofund/files/7696142/Cofund.Pitch.pdf)
+
 
 ## Quick Setup Guide
 
