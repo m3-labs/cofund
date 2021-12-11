@@ -102,4 +102,7 @@ act/agentAddress/targetAddress/methodName(type: arg)
 The `targetAddress` is the address of the smart contract. 
 
 
-![Argon Voting section](images/aragon_voting.png)
+![Argon Voting section](images/aragon-voting.png)
+
+![Output section](images/metamask-output.png)
+
