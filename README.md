@@ -36,11 +36,14 @@ yarn install
 Make sure you have installed [Node](https://nodejs.org/en/download/), [Yarn](https://classic.yarnpkg.com/en/docs/install), and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 **Main steps:**
-- [Config `.env` file](#config-env-file)
-- [Deploy the CoFund smart contract to Rinkeby](#deploy-the-cofund-smart-contract-to-rinkeby)
-- [Send Superfluid Stream to the CoFund smart contract](#send-superfluid-stream-to-the-smart-contract)
-- [Transfer Ownership of the CoFund smart contract to Aragon client](#transfer-ownership-of-the-cofund-to-aragon-client)
-- [Interact with Superfulid via voting on Aragon](#interact-with-superfulid-via-voting-on-aragon)
+- [Cofund](#cofund)
+  - [Submission Docs](#submission-docs)
+  - [Quick Setup Guide](#quick-setup-guide)
+    - [Config `.env` file](#config-env-file)
+    - [Deploy the CoFund smart contract to Rinkeby](#deploy-the-cofund-smart-contract-to-rinkeby)
+    - [Send Superfluid Stream to the CoFund smart contract](#send-superfluid-stream-to-the-cofund-smart-contract)
+    - [Transfer Ownership of the CoFund smart contract to Aragon client](#transfer-ownership-of-the-cofund-smart-contract-to-aragon-client)
+    - [Interact with Superfulid via voting on Aragon](#interact-with-superfulid-via-voting-on-aragon)
 
 ### Config `.env` file
 copy the `.env.template` file and change the name to `.env`. The format of the file is as follows:
@@ -62,7 +65,7 @@ ETHERSCAN_API_KEY= xxx
 On the local machine, run:
 
 ```
-npx hardhat deploy --reset
+yarn deploy:reset
 ```
 
 ### Send Superfluid Stream to the CoFund smart contract
@@ -80,7 +83,7 @@ Next, go to `scripts/setOwner.js` file, and paste the agent address in this expr
 To transfer the ownership run the following command on your console:
 
 ```
-npx hardhat run scripts/setOwner.js
+yarn transfer
 ```
 
 Now the Aragon agent is the owner of the smart contract. It can interact with the contract such as changing the stream or modifying the fixed amount of fund. This will allow the Aragon app to trigger funding immediately when a proposal is approved as the result of a DAO Vote.
